@@ -172,7 +172,9 @@ fsp.checkFolder(
                         html,
                         {encoding: ENCODING}
                     );
-                });
+                }).catch(function(err) {
+                    log(err)
+                })
             })
     );
 }).catch(function(err) {
