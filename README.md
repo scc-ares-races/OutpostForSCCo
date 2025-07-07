@@ -6,7 +6,7 @@ It uses the [add-on interface](http://www.outpostpm.org/docs/Outpost320-AddonUG.
 to Outpost, and a web browser to display and edit forms.
 
 For installation and usage directions, see the UserGuide.html file
-in each [release](https://github.com/jmkristian/OutpostForSCCo/releases).
+in each [release](https://github.com/scc-ares-races/OutpostForSCCo/releases).
 
 Building Installers
 -------------------
@@ -79,7 +79,7 @@ Developing Forms
 ================
 
 Most changes to forms will be done in
-[pack-it-forms](https://github.com/jmkristian/pack-it-forms)
+[pack-it-forms](https://github.com/scc-ares-races/pack-it-forms)
 (not this repository).
 To get started, replace the pack-it-forms sub-folder with a clone of the pack-it-forms repository.
 Run build.sh to create installers, and install the add-on you wish to develop.

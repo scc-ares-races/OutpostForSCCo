@@ -3,7 +3,7 @@
     "version": "3.19.0",
     "description": "Add-ons for Outpost Packet Message Manager.",
     "license": "Apache-2.0",
-    "repository": "https://github.com/jmkristian/OutpostForSCCo",
+    "repository": "https://github.com/scc-ares-races/OutpostForSCCo",
     "dependencies": {
         "body-parser": "1.18.3",
         "concat-stream": "1.6.2",
