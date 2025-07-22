@@ -16,7 +16,9 @@ To build it, you'll need:
 * [Git](https://git-scm.com/downloads) configured with core.autocrlf true,
   so it will check out text files with CRLF but check them in with LF.
   Please configure user.name and user.email to identify you as the author.
-* [nvm for Windows](https://github.com/coreybutler/nvm-windows)
+* [nvm for Windows](https://github.com/coreybutler/nvm-windows/blob/master/README.md)
+  [version 1.1.12](https://github.com/coreybutler/nvm-windows/releases/tag/1.1.12).
+  Don't use a newer version: it won't install very old versions of node.js.
 * [NSIS](http://nsis.sourceforge.net) version 3 or later,
   with the [Simple Firewall Plugin](https://nsis.sourceforge.io/NSIS_Simple_Firewall_Plugin).
 * [SignTool](https://docs.microsoft.com/en-us/windows/win32/seccrypto/signtool),
@@ -31,7 +33,7 @@ To build it, you'll need:
 * a bash shell.
   The bash shell included with Git for Windows is sufficient.
 
-Using [nvm](https://github.com/coreybutler/nvm-windows),
+Using [nvm](https://github.com/coreybutler/nvm-windows/blob/master/README.md),
 install the 32-bit variants of
 [Node.js](https://nodejs.org/en/download/)
 [version 4.9.1](https://nodejs.org/download/release/v4.9.1/) (yes that old)
@@ -59,6 +61,15 @@ The installer source code is setup.nsi.
 The source for most of the installed code is bin/Outpost\_Forms.js.
 The installer configures Outpost to execute launch.js.
 For debugging, you might change the configuration to execute launch-v.cmd instead.
+
+Developing Forms
+================
+
+Most changes will be done in
+[pack-it-forms](https://github.com/jmkristian/pack-it-forms)
+(not this repository).
+To get started, replace the pack-it-forms sub-folder with a clone of the pack-it-forms repository.
+Run build.sh to create installers, and install the add-on you wish to develop.
 
 To develop a new add-on:
 * create form-\*.html files in pack-it-forms.
@@ -93,7 +104,8 @@ For example:
 
 `    node buildHTML.js pack-it-forms C:/PackItForms/Outpost/SCCo/pack-it-forms`
 
-When you've finished form development, release pack-it-forms and then use the new released version here.
+When you've finished form development, release pack-it-forms and then
+build installers using the new released version.
 That is:
 1. Commit changes to pack-it-forms and push them to GitHub.
 1. Release pack-it-forms on GitHub and create a new release tag for it.
